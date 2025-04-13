@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ApiSerachController">
+    <children>
+        <TextField fx:id="searchField" layoutX="157.0" layoutY="14.0" prefHeight="55.0" prefWidth="390.0">
+            <font>
+                <Font name="Segoe UI" size="18.0" />
+            </font>
+        </TextField>
+        <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="14.0" prefHeight="55.0" prefWidth="80.0" text="Pesquisar na API" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="searchButton" layoutX="560.0" layoutY="14.0" mnemonicParsing="false" onAction="#onSearchButtonClick" prefHeight="55.0" prefWidth="80.0" text="Buscar">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Button>
+        <ScrollPane fitToWidth="true" layoutX="5.0" layoutY="89.0" prefHeight="300.0" prefWidth="700.0">
+            <content>
+                <VBox prefHeight="300.0" prefWidth="700.0">
+                    <children>
+                        <TableView fx:id="bookTableView" prefHeight="300.0" prefWidth="680.0">
+                            <columns>
+                                <TableColumn fx:id="titleColumn" prefWidth="403.0" text="Título" />
+                                <TableColumn fx:id="authorsColumn" prefWidth="196.0" text="Autor" />
+                                <TableColumn fx:id="yearColumn" prefWidth="85.0" text="Ano" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

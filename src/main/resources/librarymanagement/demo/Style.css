@@ -1,0 +1,22 @@
+.root {
+    -fx-background-color: #e6f2f5;
+}
+
+/*buttons on Menu*/
+
+.button {
+    -fx-background-color: #6289a6;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #2b6681;
+}
+
+.headerBoxApp, .headerBoxUser {
+    -fx-background-color: #c7e0ea;
+    -fx-padding: 10 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 4, 0.3, 0, 2);
+}

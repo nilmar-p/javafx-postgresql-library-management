@@ -13,7 +13,7 @@ public class ApiSearch {
             Parent root = loader.load();
 
             Stage modalStage = new Stage();
-            modalStage.setTitle("Pesquisar na API");
+            modalStage.setTitle("Pesquisar livro na API");
             modalStage.setResizable(false);
             modalStage.setScene(new Scene(root));
             modalStage.initModality(Modality.APPLICATION_MODAL);
